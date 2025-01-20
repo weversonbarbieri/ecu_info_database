@@ -74,11 +74,11 @@ with tab2:
     for collection in collections:
         collection_list.append(collection.id)
         # Create a selectbox for 'Make' options
-        make_selected = st.selectbox("Make: ", collection_list)
-        # Reference to the selected collection
-        subjects_ref = db.collection(make_selected)
-        # Get all documents in the selected collection
-        subjects = subjects_ref.get()
+    make_selected = st.selectbox("Make: ", collection_list)
+    # Reference to the selected collection
+    subjects_ref = db.collection(make_selected)
+    # Get all documents in the selected collection
+    subjects = subjects_ref.get()
 
     subject_list = []
     # Append the document IDs to the list
