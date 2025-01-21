@@ -2,4 +2,3 @@ streamlit
 firebase_admin
 datetime
 requests
-Image
