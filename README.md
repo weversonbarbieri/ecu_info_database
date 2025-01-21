@@ -1,3 +1,5 @@
+![Project in Working Progress](https://img.shields.io/badge/Project-in%20Working%20Progress-yellow)
+
 # ECU Info Database
 
 This project is designed to input and maintain a database of information related to the repair, programming, and testing of automotive control units (ECUs). The database stores valuable information about circuits, common faults, trouble codes, and solutions for specific defects. It aims to provide a comprehensive resource for technicians and engineers working with ECUs, facilitating efficient troubleshooting and repair processes.
