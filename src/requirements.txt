@@ -2,6 +2,5 @@ streamlit
 firebase_admin
 datetime
 requests
-PIL
 Image
 BytesIO
