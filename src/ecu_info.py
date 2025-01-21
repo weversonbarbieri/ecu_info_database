@@ -4,6 +4,12 @@ from firebase_admin import credentials, firestore
 from firebase_admin import db
 import json
 import datetime
+from PIL import Image
+from io import BytesIO
+
+
+st.write("<div align='Center'><h2><i>Diagnostic Assistant Database</i></h2></div>", unsafe_allow_html=True)
+
 
 # Load the secret key from Streamlit secrets
 key_dict = json.loads(st.secrets["json_key"])
