@@ -1,6 +1,7 @@
-![Project in Working Progress](https://img.shields.io/badge/Project-in%20Working%20Progress-yellow)
-
 # ECU Info Database
+![Python](https://img.shields.io/badge/Python-3.8-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.0-brightgreen)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
 
 This project is designed to input and maintain a database of information related to the repair, programming, and testing of automotive control units (ECUs). The database stores valuable information about circuits, common faults, trouble codes, and solutions for specific defects. It aims to provide a comprehensive resource for technicians and engineers working with ECUs, facilitating efficient troubleshooting and repair processes.
 
