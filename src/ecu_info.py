@@ -4,8 +4,24 @@ from firebase_admin import credentials, firestore
 from firebase_admin import db
 import json
 import datetime
+import requests
 from PIL import Image
 from io import BytesIO
+
+# URL of the app image
+url_app_image = "https://raw.githubusercontent.com/weversonbarbieri/ecu_info_database/master/image/imagem.jpg"
+
+# Request the app image from the URL
+response_app_image = requests.get(url_app_image)
+
+# Open the image content
+content_image_app = Image.open(BytesIO(response_app_image.content))
+
+# Resize the image
+image_app_resized = content_image_app.resize((1000, 250))
+
+# Display the image in the Streamlit app
+st.image(image_app_resized)
 
 # Write the app's title in HMTL.
 st.write("<div align='Center'><h2><i>Diagnostic Assistant Database</i></h2></div>", unsafe_allow_html=True)
