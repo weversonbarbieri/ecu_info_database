@@ -7,7 +7,7 @@ import datetime
 from PIL import Image
 from io import BytesIO
 
-
+# Write the app's title in HMTL.
 st.write("<div align='Center'><h2><i>Diagnostic Assistant Database</i></h2></div>", unsafe_allow_html=True)
 
 
