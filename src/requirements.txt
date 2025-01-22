@@ -5,5 +5,3 @@ requests
 datetime
 PIL 
 Image
-io
-BytesIO
