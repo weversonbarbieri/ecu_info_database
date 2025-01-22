@@ -2,7 +2,6 @@ streamlit
 firebase_admin
 datetime
 requests
-json
 datetime
 PIL 
 Image
