@@ -4,5 +4,5 @@ datetime
 requests
 json
 datetime
-PIL
-io
+Image
+BytesIO
