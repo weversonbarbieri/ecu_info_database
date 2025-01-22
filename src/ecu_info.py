@@ -13,6 +13,8 @@ st.set_page_config(
     page_title="ECU DataBase",
     # Shows the page icon on the browser tab.
     page_icon=":computer:",
+    layout='centered',
+    initial_sidebar_state='expanded'
 )
 
 # URL of the app image
