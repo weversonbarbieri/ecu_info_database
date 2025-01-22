@@ -4,5 +4,7 @@ datetime
 requests
 json
 datetime
-from PIL import Image
-from io import BytesIO
+PIL 
+Image
+io
+BytesIO
