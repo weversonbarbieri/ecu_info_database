@@ -5,4 +5,3 @@ requests
 json
 datetime
 Image
-BytesIO
