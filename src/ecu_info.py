@@ -8,8 +8,15 @@ import requests
 from PIL import Image
 from io import BytesIO
 
+st.set_page_config(
+     # Shows the page title
+    page_title="ECU DataBase",
+    # Shows the page icon on the browser tab.
+    page_icon=":computer:",
+)
+
 # URL of the app image
-url_app_image = "https://raw.githubusercontent.com/weversonbarbieri/ecu_info_database/master/image/imagem.jpg"
+url_app_image = "https://raw.githubusercontent.com/weversonbarbieri/ecu_info_database/master/image/app_image.jpg"
 
 # Request the app image from the URL
 response_app_image = requests.get(url_app_image)
