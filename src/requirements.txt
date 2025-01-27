@@ -2,5 +2,4 @@ streamlit==1.36.0
 firebase_admin
 datetime
 requests
-datetime
 Image
