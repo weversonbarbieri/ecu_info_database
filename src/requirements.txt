@@ -3,4 +3,4 @@ firebase_admin
 datetime
 requests
 dotenv
-Image
+pyrebase
