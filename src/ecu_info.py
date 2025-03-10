@@ -319,8 +319,8 @@ if choise == "Login":
                     st.write(f"{topic}: {value}")
 
                  # Exception handling when an error occurs
-                except:
-                  st.write("No resolution input for this issue yet.")
+                except Exception as e:
+                     st.write(f"Failed: {e}")
 
             elif options == "Delete":
               # Select the option to be deleted: Subject or Issue
