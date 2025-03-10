@@ -1,13 +1,8 @@
 streamlit==1.36.0
 firebase_admin
 datetime
-<<<<<<< HEAD
-dotenv
 os
 pyrebase
 json
-=======
 requests
 dotenv
-pyrebase
->>>>>>> c40af399a087d587d4ec944ba033b6fd7e16785d
