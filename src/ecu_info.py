@@ -1,11 +1,12 @@
 import os
-from dotenv import load_dotenv, dotenv_values
 import pyrebase
 import streamlit as st
 import firebase_admin
 import json
+from dotenv import load_dotenv
 from firebase_admin import credentials, firestore, auth
 from firebase_admin import db
+
 
 # Load environment variables
 load_dotenv()
@@ -149,6 +150,7 @@ if choise == "Login":
 
                 # Tab to add make, subject, issue and information
                 with tab1:
+                  st.write("In case you want to add a new subject and issue under an existing make in the database, please use the tab 'Add Subject'")
                   # Load the key from the secrets
                   key_dict = json.loads(st.secrets["textkey"])
                   # Initialize Firebase
@@ -183,7 +185,7 @@ if choise == "Login":
 
                 # Tab to add a new subject and issue
                 with tab2:
-                  
+                  st.write("In case you want to add a new issues and information under an existing make/subject in the database, please use the tab 'Add Issue'")
                   # Initialize Firebase
                   if not firebase_admin._apps: 
                     # Load the key from the secrets
@@ -217,6 +219,7 @@ if choise == "Login":
                      st.write(f"Error: {e}")
                
                 with tab3:
+                  st.write("In case you want to update an information under an existing make/subject/issue in the database, please use the tab 'Update Information'")
                   # Load the key from the secrets
                   key_dict = json.loads(st.secrets["textkey"])
                   # Initialize Firebase
@@ -394,7 +397,3 @@ if choise == "Login":
         # This is the exception handling when the user and password are incorrect                
         except:
             st.write("Enter the correct login and password")
-  
-
-
-# python -m streamlit run "C:\Language_Projects\Language_Projects\Python\ecu_info\src\ecu_info.py"
